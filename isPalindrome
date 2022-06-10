@@ -1,0 +1,12 @@
+    static boolean isPalindrome(String w) {
+    
+    char[] word = w.toCharArray();
+    
+        for (int i = 0; i < word.length/2; i++){
+        
+            if (word[i] != word[word.length - 1 - i]) {
+                return false;
+            }
+        }
+        return true;
+    }
